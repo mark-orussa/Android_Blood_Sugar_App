@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1" >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Enter the A1C Score or Average Glugose level"
+      android:id="@+id/textView" android:layout_gravity="center_horizontal" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A1C"
+      android:id="@+id/lblA" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal"
+      android:ems="10"
+      android:id="@+id/txtA" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Average Gluclose (eAG)"
+      android:id="@+id/lblB" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal"
+      android:ems="10"
+      android:id="@+id/txtB" />
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/formulaGroup" >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADAG Formula"
+        android:id="@+id/rdoX" android:layout_gravity="center_horizontal" android:checked="true"
+        android:onClick="radioButtonClicked" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DCCT Formula"
+        android:id="@+id/rdoY" android:checked="false" android:onClick="radioButtonClicked" />
+  </RadioGroup >
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Calculate"
+      android:id="@+id/btnCalc" android:layout_gravity="center_horizontal" android:onClick="Convert" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="View Log"
+      android:id="@+id/btnLog" android:layout_gravity="center_horizontal" android:onClick="switchViews" />
+</LinearLayout >
+

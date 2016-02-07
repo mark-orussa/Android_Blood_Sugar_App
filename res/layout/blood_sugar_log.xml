@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="timeOnClick" >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Date"
+      android:id="@+id/lblDate"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="36dp"
+      android:layout_marginTop="36dp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtDate"
+      android:text="temp"
+      android:layout_alignBottom="@+id/lblDate"
+      android:layout_marginStart="100dp"
+      android:onClick="dateOnClick" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="Time"
+      android:id="@+id/lblTime"
+      android:layout_below="@+id/txtDate"
+      android:layout_alignParentStart="true"
+      android:layout_marginLeft="36dp"
+      android:layout_marginTop="36dp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtTime"
+      android:text="temp"
+      android:layout_alignBottom="@+id/lblTime"
+      android:layout_marginStart="100dp" android:onClick="timeOnClick" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="eAG"
+      android:id="@+id/lblEag"
+      android:layout_below="@+id/txtTime"
+      android:layout_alignParentStart="true"
+      android:layout_marginLeft="36dp"
+      android:layout_marginTop="36dp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtEag"
+      android:layout_alignBottom="@+id/lblEag"
+      android:layout_marginStart="100dp"
+      android:text="temp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="A1C"
+      android:id="@+id/lblA1c"
+      android:layout_below="@+id/lblEag"
+      android:layout_alignParentStart="true"
+      android:layout_marginLeft="36dp"
+      android:layout_marginTop="36dp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtA1c"
+      android:layout_alignBottom="@+id/lblA1c"
+      android:layout_marginStart="100dp"
+      android:text="temp" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Save Data"
+      android:id="@+id/btnSaveData"
+      android:onClick="saveData"
+      android:layout_above="@+id/btnReturn"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="73dp" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Return"
+      android:id="@+id/btnReturn"
+      android:onClick="returnToCalc"
+      android:layout_marginBottom="53dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true" />
+</RelativeLayout >

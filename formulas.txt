@@ -1,0 +1,10 @@
+There are two numbers the user may enter, the Average Glugose and A1C.
+There are two different formulas to calculate between the two, ADAG and DCCT. Therefore, there are four possible formulas.
+
+ADAG:
+eAG = (1.583 * A1C - 2.52) * 18.05
+A1C = (eAG/28.57315) + 1.59191409
+
+DCCT:
+eAG = (A1c * 35.6) - 77.3
+A1C = (eAG/35.6) + 2.17134831
